@@ -10,6 +10,8 @@ setupChart = (checks) ->
       scales:
         yAxes:[
           ticks:
+            min: 0
+            max: 1
             stepSize: 1
         ]
         xAxes: [
