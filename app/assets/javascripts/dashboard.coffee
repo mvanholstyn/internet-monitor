@@ -17,7 +17,7 @@ setupChart = (checks) ->
         xAxes: [
           type: 'time'
           time:
-            unit: 'minute'
+            unit: 'hour'
         ]
     type: 'line',
     data:
