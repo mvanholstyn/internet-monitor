@@ -33,3 +33,7 @@ set :deploy_to, "~/www/internet-monitor"
 # set :keep_releases, 5
 
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} /usr/local/bin/rbenv exec"
+
+set :services, %w(internet-monitor)
+
+after "deploy:published", "launchd:reload"
