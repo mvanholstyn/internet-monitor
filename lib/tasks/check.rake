@@ -11,6 +11,6 @@ task :check => :environment do
 
   loop do
     Check.create! up: internet_connection?
-    sleep 5
+    sleep 30
   end
 end
