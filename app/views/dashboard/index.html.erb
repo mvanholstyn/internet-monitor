@@ -1,0 +1,8 @@
+
+<h2>Checks Over Time</h2>
+<canvas id="myChart" width="1000" height="150"></canvas>
+
+<h2>Last 10 Failed Checks</h2>
+<% @checks.each do |check| %>
+  <%= check.created_at %> - <%= check.up? %><br>
+<% end %>
