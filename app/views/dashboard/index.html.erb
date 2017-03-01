@@ -6,3 +6,16 @@
 <% @checks.each do |check| %>
   <%= check.created_at %> - <%= check.up? %><br>
 <% end %>
+
+ <h2>TODO</h2>
+ <pre>
+* add note to down check
+* select date range of graph
+* select graph time axis (min, hour, day, etc)
+* limit graph data when it gets too big
+* verify checks are happining consistently
+* show last 10 times in Eastern
+* calculate uptime/downtime (%, #mins)
+* calculate number of outages, average downtime, total downtime
+* email me when down/up change happens
+ </pre>
