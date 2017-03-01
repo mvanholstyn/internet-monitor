@@ -1,3 +1,4 @@
+# https://github.com/bjoernalbers/faxomat/tree/master/lib/capistrano/templates/launchd
 namespace :launchd do
   def launchd_dir
     @launchd_dir ||= Pathname.new('~/Library/LaunchAgents')
