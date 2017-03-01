@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:mvanholstyn/internet-monitor.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "~/www/internet-monitor"
+set :deploy_to, File.expand_path("~/www/internet-monitor")
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

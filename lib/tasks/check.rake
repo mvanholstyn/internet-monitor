@@ -1,5 +1,3 @@
-
-
 task :check => :environment do
   require 'open-uri'
 
